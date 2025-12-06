@@ -1,6 +1,4 @@
-/* ============================
-   BASE VARIABLES & GLOBAL STYLES
-   ============================ */
+
 
 :root{
   --bg: linear-gradient(180deg, #0f172a, #071033);
@@ -28,9 +26,7 @@ body {
   transition: background 400ms ease, color 300ms ease;
 }
 
-/* ============================
-   HEADER
-   ============================ */
+
 
 .site-header {
   padding: clamp(12px,4vw,28px);
@@ -48,9 +44,7 @@ body {
   font-size:14px;
 }
 
-/* ============================
-   MAIN LAYOUT
-   ============================ */
+
 
 .main {
   flex:1;
@@ -61,9 +55,6 @@ body {
   padding: 28px clamp(12px,4vw,64px);
 }
 
-/* ============================
-   CONTROLS
-   ============================ */
 
 .controls{
   width:100%;
@@ -77,9 +68,7 @@ body {
 .volume { width:200px; }
 .volume-label { margin-right:auto; color:var(--muted); font-size:13px; }
 
-/* ============================
-   PAD GRID
-   ============================ */
+
 
 .board{
   width:100%;
@@ -89,9 +78,7 @@ body {
   gap:18px;
 }
 
-/* ============================
-   PAD BUTTONS
-   ============================ */
+
 
 .pad{
   background: rgba(255,255,255,0.03);
@@ -125,9 +112,7 @@ body {
   color:var(--muted);
 }
 
-/* ============================
-   PAD ACTIVE GLOW
-   ============================ */
+
 
 .pad.active {
   transform: scale(1.05);
@@ -137,9 +122,7 @@ body {
     0 0 48px color-mix(in srgb, var(--accent) 60%, transparent);
 }
 
-/* ============================
-   FOOTER
-   ============================ */
+
 
 .site-footer{
   padding:12px;
@@ -148,9 +131,7 @@ body {
   font-size:13px;
 }
 
-/* ============================
-   THEMES (Minimal)
-   ============================ */
+
 
 /* ROCK */
 .theme-rock {
