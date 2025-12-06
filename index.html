@@ -23,10 +23,7 @@
     </section>
 
     <section class="board" aria-label="Genre board">
-      <!-- Each button has:
-           - data-genre: the theme class (used by JS to toggle body class)
-           - data-src: path to the audio clip for that genre
-           - aria-live update is optional handled by JS for announcements -->
+      
       <button class="pad" data-genre="theme-rock" data-src="assets/rock.mp3" aria-label="Play Rock sample">
         <div class="pad-icon">🎸</div>
         <div class="pad-label">Rock</div>
@@ -58,16 +55,13 @@
       </button>
     </section>
 
-    <!-- Hidden audio elements are optional — you can create <audio> nodes dynamically in JS instead.
-         If you want to include them here, add <audio id="audio-rock" src="..."></audio> etc. -->
+  
   </main>
 
   <footer class="site-footer" role="contentinfo">
     <small></small>
   </footer>
 
-  <!-- ADD YOUR JAVASCRIPT FILE HERE (not provided per request) -->
-  <!-- <script src="app.js"></script> -->
    <script src="script.js"></script>
 </body>
 </html>
