@@ -1,0 +1,208 @@
+/* ============================
+   BASE VARIABLES & GLOBAL STYLES
+   ============================ */
+
+:root{
+  --bg: linear-gradient(180deg, #0f172a, #071033);
+  --fg: #e6eef8;
+  --muted: rgba(255,255,255,0.7);
+  --accent: #20bf6b;
+  --pad-border: rgba(255,255,255,0.06);
+  --shadow: 0 6px 20px rgba(3,7,18,0.55);
+  --font-sans: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+}
+
+html, body {
+  margin:0;
+  padding:0;
+  height:100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--fg);
+  background: var(--bg);
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  transition: background 400ms ease, color 300ms ease;
+}
+
+/* ============================
+   HEADER
+   ============================ */
+
+.site-header {
+  padding: clamp(12px,4vw,28px);
+  text-align:center;
+}
+
+.title {
+  margin:0;
+  font-size: clamp(20px,3.6vw,36px);
+}
+
+.subtitle {
+  margin:6px 0 0 0;
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* ============================
+   MAIN LAYOUT
+   ============================ */
+
+.main {
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:20px;
+  padding: 28px clamp(12px,4vw,64px);
+}
+
+/* ============================
+   CONTROLS
+   ============================ */
+
+.controls{
+  width:100%;
+  max-width:960px;
+  display:flex;
+  gap:12px;
+  align-items:center;
+  justify-content:flex-end;
+}
+
+.volume { width:200px; }
+.volume-label { margin-right:auto; color:var(--muted); font-size:13px; }
+
+/* ============================
+   PAD GRID
+   ============================ */
+
+.board{
+  width:100%;
+  max-width:960px;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap:18px;
+}
+
+/* ============================
+   PAD BUTTONS
+   ============================ */
+
+.pad{
+  background: rgba(255,255,255,0.03);
+  border:1px solid var(--pad-border);
+  border-radius: 10px;
+  padding:18px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  justify-content:center;
+  align-items:center;
+  cursor:pointer;
+  transition: transform 200ms ease, box-shadow 240ms ease, background 240ms ease;
+  box-shadow: var(--shadow);
+  color: inherit;
+  text-align:center;
+  user-select:none;
+}
+
+.pad:active {
+  transform: scale(0.97);
+}
+
+.pad-icon {
+  font-size:28px;
+}
+
+.pad-label {
+  font-weight:600;
+  font-size:15px;
+  color:var(--muted);
+}
+
+/* ============================
+   PAD ACTIVE GLOW
+   ============================ */
+
+.pad.active {
+  transform: scale(1.05);
+  box-shadow:
+    0 0 12px var(--accent),
+    0 0 28px var(--accent),
+    0 0 48px color-mix(in srgb, var(--accent) 60%, transparent);
+}
+
+/* ============================
+   FOOTER
+   ============================ */
+
+.site-footer{
+  padding:12px;
+  text-align:center;
+  color:var(--muted);
+  font-size:13px;
+}
+
+/* ============================
+   THEMES (Minimal)
+   ============================ */
+
+/* ROCK */
+.theme-rock {
+  background:
+    /* linear-gradient(180deg, rgba(0,0,0,0.7), rgba(0,0,0,0.9)), */
+    url("assets/rock.png") center/cover no-repeat fixed;
+  color: #f6eaea;
+  --accent: #ff2e2e;
+
+}
+
+/* POP */
+.theme-pop {
+  background:
+    /* linear-gradient(135deg,#ff9ad5 0%, #8fdcff 45%, #c29bff 100%), */
+    url("assets/pop.jpg") center/cover no-repeat fixed;
+  color: #120022;
+  --accent: #ffd657;
+}
+
+/* EDM */
+.theme-edm {
+  background:
+    /* linear-gradient(180deg,#0a0030 0%, #06183b 40%, #180033 100%), */
+    url("assets/edm.png") center/cover no-repeat fixed;
+  color: #e6f3ff;
+  --accent: #49f0ff;
+}
+
+/* CLASSICAL */
+.theme-classical {
+  background:
+    /* linear-gradient(180deg,#fffaf2 0%, #f3ead3 100%), */
+    url("assets/classical.png") center/cover no-repeat fixed;
+  color: #211b14;
+  --accent: #b68f36;
+}
+
+/* HIPHOP */
+.theme-hiphop {
+  background:
+    /* linear-gradient(180deg, rgba(0,0,0,0.6), rgba(0,0,0,0.9)), */
+    url("assets/hiphop.png") center/cover no-repeat fixed;
+  color: #cdad8e;
+  --accent: #ffd22a;
+}
+
+/* LOFI */
+.theme-lofi {
+  background:
+    /* linear-gradient(180deg,#2f2230 0%, #3a2b3b 60%, #5c4756 100%), */
+    url("assets/lofi.png") center/cover no-repeat fixed;
+  color: #efe6e9;
+  --accent: #f6b08c;
+}
