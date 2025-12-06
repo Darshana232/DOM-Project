@@ -137,7 +137,7 @@ body {
 .theme-rock {
   background:
     /* linear-gradient(180deg, rgba(0,0,0,0.7), rgba(0,0,0,0.9)), */
-    url("assets/rock.png") center/cover no-repeat fixed;
+    url("rock.png") center/cover no-repeat fixed;
   color: #f6eaea;
   --accent: #ff2e2e;
 
@@ -147,7 +147,7 @@ body {
 .theme-pop {
   background:
     /* linear-gradient(135deg,#ff9ad5 0%, #8fdcff 45%, #c29bff 100%), */
-    url("assets/pop.jpg") center/cover no-repeat fixed;
+    url("pop.jpg") center/cover no-repeat fixed;
   color: #120022;
   --accent: #ffd657;
 }
@@ -156,7 +156,7 @@ body {
 .theme-edm {
   background:
     /* linear-gradient(180deg,#0a0030 0%, #06183b 40%, #180033 100%), */
-    url("assets/edm.png") center/cover no-repeat fixed;
+    url("edm.png") center/cover no-repeat fixed;
   color: #e6f3ff;
   --accent: #49f0ff;
 }
@@ -165,7 +165,7 @@ body {
 .theme-classical {
   background:
     /* linear-gradient(180deg,#fffaf2 0%, #f3ead3 100%), */
-    url("assets/classical.png") center/cover no-repeat fixed;
+    url("classical.png") center/cover no-repeat fixed;
   color: #211b14;
   --accent: #b68f36;
 }
@@ -174,7 +174,7 @@ body {
 .theme-hiphop {
   background:
     /* linear-gradient(180deg, rgba(0,0,0,0.6), rgba(0,0,0,0.9)), */
-    url("assets/hiphop.png") center/cover no-repeat fixed;
+    url("hiphop.png") center/cover no-repeat fixed;
   color: #cdad8e;
   --accent: #ffd22a;
 }
@@ -183,7 +183,7 @@ body {
 .theme-lofi {
   background:
     /* linear-gradient(180deg,#2f2230 0%, #3a2b3b 60%, #5c4756 100%), */
-    url("assets/lofi.png") center/cover no-repeat fixed;
+    url("lofi.png") center/cover no-repeat fixed;
   color: #efe6e9;
   --accent: #f6b08c;
 }
