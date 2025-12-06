@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Genre Vibes — Music Board</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <h1 class="title">Sound Palette</h1>
+      <p class="subtitle">Press a beat — paint the mood!</p>
+    </div>
+  </header>
+
+  <main class="main" id="main" role="main">
+    <section class="controls" aria-label="Playback controls">
+      <label class="volume-label" for="volume">Volume: <span id="volumeValue">80%</span></label>
+      <input id="volume" class="volume" type="range" min="0" max="100" value="80" aria-labelledby="volumeValue">
+      <button id="muteBtn" class="mute-btn" aria-pressed="false" aria-label="Mute">🔇</button>
+    </section>
+
+    <section class="board" aria-label="Genre board">
+      <!-- Each button has:
+           - data-genre: the theme class (used by JS to toggle body class)
+           - data-src: path to the audio clip for that genre
+           - aria-live update is optional handled by JS for announcements -->
+      <button class="pad" data-genre="theme-rock" data-src="assets/rock.mp3" aria-label="Play Rock sample">
+        <div class="pad-icon">🎸</div>
+        <div class="pad-label">Rock</div>
+      </button>
+
+      <button class="pad" data-genre="theme-pop" data-src="assets/pop.mp3" aria-label="Play Pop sample">
+        <div class="pad-icon">✨</div>
+        <div class="pad-label">Pop</div>
+      </button>
+
+      <button class="pad" data-genre="theme-edm" data-src="assets/edm.mp3" aria-label="Play EDM sample">
+        <div class="pad-icon">🔊</div>
+        <div class="pad-label">EDM</div>
+      </button>
+
+      <button class="pad" data-genre="theme-classical" data-src="assets/Classical1.mp3" aria-label="Play Classical sample">
+        <div class="pad-icon">🎻</div>
+        <div class="pad-label">Classical</div>
+      </button>
+
+      <button class="pad" data-genre="theme-hiphop" data-src="assets/hip-hop.mp3" aria-label="Play Hip-hop sample">
+        <div class="pad-icon">🎤</div>
+        <div class="pad-label">Hip-Hop</div>
+      </button>
+
+      <button class="pad" data-genre="theme-lofi" data-src="assets/lo-fi.mp3" aria-label="Play Lofi sample">
+        <div class="pad-icon">☕</div>
+        <div class="pad-label">Lofi</div>
+      </button>
+    </section>
+
+    <!-- Hidden audio elements are optional — you can create <audio> nodes dynamically in JS instead.
+         If you want to include them here, add <audio id="audio-rock" src="..."></audio> etc. -->
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <small></small>
+  </footer>
+
+  <!-- ADD YOUR JAVASCRIPT FILE HERE (not provided per request) -->
+  <!-- <script src="app.js"></script> -->
+   <script src="script.js"></script>
+</body>
+</html>
